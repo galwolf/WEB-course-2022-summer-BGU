@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/js.js"></script>
+</head>
+
+<body onload="Greeting()">
+    <div class="container">
+        <img class="logo" src="../static/ChargedUp.jpg">
+        <a href="SighIn.html"><button class="logOut" type="submit">Log out from the site</button></a>
+        <div class="HomePage">
+            <h1 id="greet"></h1>
+            <button id="ReportButton" onclick="ShowHideReport()" type="submit">Show Report</button>
+        </div><br>
+        <table id="Report" class="Reports">
+            <tr>
+                <th>electric station</th>
+                <th>far away from you</th>
+                <th>available charges</th>
+
+            </tr>
+            <tr>
+                <td><a href="choosing.html">
+                        <button type="submit">amikam station</button>
+                    </a></td>
+                <td>13.00km</td>
+                <td>6/8</td>
+
+            </tr>
+            <tr>
+                <td><a href="choosing.html">
+                        <button type="submit">delek station</button>
+                    </a></td>
+                <td>6.80km</td>
+                <td>3/6</td>
+
+            </tr>
+            <tr>
+                <td><a href="choosing.html">
+                        <button type="submit">web station</button>
+                    </a></td>
+                <td>6.00km</td>
+                <td>1/6</td>
+
+            </tr>
+            <tr>
+                <td><a href="choosing.html">
+                        <button type="submit">harel station</button>
+                    </a></td>
+                <td>21.00km</td>
+                <td>4/5</td>
+
+            </tr>
+            <tr>
+                <td><a href="choosing.html">
+                        <button type="submit">yoel station</button>
+                    </a></td>
+                <td>4.00km</td>
+                <td>3/9</td>
+
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

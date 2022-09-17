@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>register page </title>
+    <script src="../static/JS.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img class='logo' src="../static/ChargedUp.jpg" alt="">
+        <div class="split__left">
+            <h1 id="welcome"> Welcome to EV charge finder</h1>
+            <h2>Here you can find where is the nearst electric stations</h2>
+        </div>
+        <div class="split__right">
+            <form action="HomePage.html" method="get" class="form" onsubmit="return validation()">
+                <h1 class="form__title">Create New User</h1>
+                <input type="text" required class="form__input" autofocus id="fName" placeholder="First Name"><br>
+                <input type="text" required class="form__input" autofocus id="lName" placeholder="Last Name"><br>
+                <input type="text" required class="form__input" autofocus id="City" placeholder="city"><br>
+                <input type="text" required class="form__input" autofocus id="Street" placeholder="street"><br>
+                <input type="email" required class="form__input" autofocus placeholder="Email Address"><br>
+                <input type="text" required class="form__input" autofocus id="newUsername"
+                    placeholder="Choose Username"><br>
+                <input type="password" required class="form__input" id="newPassword" autofocus
+                    placeholder="input your car number"><br>
+                <span id="massage"></span><br>
+                <a href="homePage.html">
+                    <button type="submit">Create</button>
+                </a>
+            </form>
+            <p class="bottomLine">Already have an account? <a href="SighIn.html">Sign In here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
