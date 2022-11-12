@@ -81,3 +81,11 @@ function validation() {
     }
     return true;
 }
+
+function toDelete() {
+    let text = "To delete this user click 'OK'; otherwise, click 'CANCEL'";
+    if (confirm(text)) {
+        return true;
+    }
+    return false;
+}

@@ -1,0 +1,17 @@
+extends layout 
+block content
+    .split__left
+        h1#welcome  dont know where is the nearst EV charge station?
+        h2 dont worry! here you can find the nearst stations around you
+     .split__right
+       form.form(action="/checkLogIn", method="post")
+        h1.form__title Sign In
+        input.form__input(type="text", required, autofocus, placeholder="Enter your username")
+        br
+        input.form__input(type="password", required, autofocus, placeholder="Enter your car number as password")
+        br
+        div.errorMassage #{SignInError}
+        button(type="submit") Continue
+        p.bottomLine
+         | dont have an account yet? 
+         a(href="/Register") Sign up here

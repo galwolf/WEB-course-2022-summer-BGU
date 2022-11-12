@@ -1,0 +1,25 @@
+extends layout 
+block content
+  a(href="/")
+    button.logOut(type="submit") Log out from the site
+  .Body
+    h1#{greet}
+    button#ReportButton(onclick="ShowHideReport()", type="submit") Show Report
+  br
+  table#Report.Reports
+    thead
+     tr
+       th electric station
+       th have electric charges
+       th available charges
+     tbody 
+        each n in stations 
+        tr 
+        td = n.name 
+        td = n.haveElectricChargers
+        td = n.numCharges
+        
+    .bottom
+        p
+        | You can view or update your user details   
+        a(href="/userDetails") HERE
